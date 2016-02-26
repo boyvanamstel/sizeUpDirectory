@@ -2,7 +2,7 @@
 
 This is a command-line tool that demonstrates two things:
 
-- Using NSDirectoryEnumerator or CFURLEnumerator to walk a directory tree
+- Using NSDirectoryEnumerator, CFURLEnumerator or NSMetaDataQuery (unreliable, testing) to walk a directory tree
 - Separation between interface (and client) and implementation
 
 The program walks a directory tree and reports the total size of all files therein. To do this, the main program uses an object called a PRHDirectoryWeigher.

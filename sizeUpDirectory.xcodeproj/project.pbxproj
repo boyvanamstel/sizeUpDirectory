@@ -13,6 +13,10 @@
 		3192AEE517F53BD100982576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3192AEC717F53A9200982576 /* main.m */; };
 		3192AEE917F53C5D00982576 /* PRHDirectoryWeigher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3192AEE817F53C5D00982576 /* PRHDirectoryWeigher.m */; };
 		3192AEEC17F53C7200982576 /* PRHDirectoryWeigher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3192AEEB17F53C7200982576 /* PRHDirectoryWeigher.m */; };
+		B532B9321C808D4100A415C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3192AEC717F53A9200982576 /* main.m */; };
+		B532B9351C808D4100A415C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3192AEC417F53A9200982576 /* Foundation.framework */; };
+		B532B9401C808D8500A415C5 /* PRHDirectoryWeigher.m in Sources */ = {isa = PBXBuildFile; fileRef = B532B93D1C808D8500A415C5 /* PRHDirectoryWeigher.m */; };
+		B532B9451C808F6200A415C5 /* NSMetadataQuery+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = B532B9441C808F6200A415C5 /* NSMetadataQuery+Synchronous.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +38,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		B532B9361C808D4100A415C5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +60,11 @@
 		3192AEE817F53C5D00982576 /* PRHDirectoryWeigher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHDirectoryWeigher.m; sourceTree = "<group>"; };
 		3192AEEB17F53C7200982576 /* PRHDirectoryWeigher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHDirectoryWeigher.m; sourceTree = "<group>"; };
 		31F9637217F61688001AAC06 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		B532B93A1C808D4100A415C5 /* sizeUpDirectoryMetaDataQuery */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sizeUpDirectoryMetaDataQuery; sourceTree = BUILT_PRODUCTS_DIR; };
+		B532B93D1C808D8500A415C5 /* PRHDirectoryWeigher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHDirectoryWeigher.m; sourceTree = "<group>"; };
+		B532B93E1C808D8500A415C5 /* sizeUpDirectoryMetaDataQuery-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sizeUpDirectoryMetaDataQuery-Prefix.pch"; sourceTree = "<group>"; };
+		B532B9431C808F6200A415C5 /* NSMetadataQuery+Synchronous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMetadataQuery+Synchronous.h"; path = "sizeUpDirectoryMetaDataQuery/NSMetadataQuery+Synchronous.h"; sourceTree = "<group>"; };
+		B532B9441C808F6200A415C5 /* NSMetadataQuery+Synchronous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMetadataQuery+Synchronous.m"; path = "sizeUpDirectoryMetaDataQuery/NSMetadataQuery+Synchronous.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +84,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B532B9341C808D4100A415C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B532B9351C808D4100A415C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +102,7 @@
 				3192AEE717F53C5D00982576 /* PRHDirectoryWeigher.h */,
 				3192AEE217F53BB300982576 /* sizeUpDirectoryCocoa */,
 				3192AED817F53AF200982576 /* sizeUpDirectoryCF */,
+				B532B93B1C808D8500A415C5 /* sizeUpDirectoryMetaDataQuery */,
 				3192AEC317F53A9200982576 /* Frameworks */,
 				31F9637017F61687001AAC06 /* Warnings */,
 				3192AEC217F53A9200982576 /* Products */,
@@ -87,6 +114,7 @@
 			children = (
 				3192AEC117F53A9200982576 /* sizeUpDirectoryCocoa */,
 				3192AED617F53AF100982576 /* sizeUpDirectoryCF */,
+				B532B93A1C808D4100A415C5 /* sizeUpDirectoryMetaDataQuery */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +169,34 @@
 			path = Warnings;
 			sourceTree = "<group>";
 		};
+		B532B93B1C808D8500A415C5 /* sizeUpDirectoryMetaDataQuery */ = {
+			isa = PBXGroup;
+			children = (
+				B532B9421C808F3900A415C5 /* Categories */,
+				B532B93D1C808D8500A415C5 /* PRHDirectoryWeigher.m */,
+				B532B9411C808D9D00A415C5 /* Supporting Files */,
+			);
+			path = sizeUpDirectoryMetaDataQuery;
+			sourceTree = "<group>";
+		};
+		B532B9411C808D9D00A415C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B532B93E1C808D8500A415C5 /* sizeUpDirectoryMetaDataQuery-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B532B9421C808F3900A415C5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B532B9431C808F6200A415C5 /* NSMetadataQuery+Synchronous.h */,
+				B532B9441C808F6200A415C5 /* NSMetadataQuery+Synchronous.m */,
+			);
+			name = Categories;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +234,23 @@
 			productReference = 3192AED617F53AF100982576 /* sizeUpDirectoryCF */;
 			productType = "com.apple.product-type.tool";
 		};
+		B532B9301C808D4100A415C5 /* sizeUpDirectoryMetaDataQuery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B532B9371C808D4100A415C5 /* Build configuration list for PBXNativeTarget "sizeUpDirectoryMetaDataQuery" */;
+			buildPhases = (
+				B532B9311C808D4100A415C5 /* Sources */,
+				B532B9341C808D4100A415C5 /* Frameworks */,
+				B532B9361C808D4100A415C5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sizeUpDirectoryMetaDataQuery;
+			productName = sizeUpDirectoryCF;
+			productReference = B532B93A1C808D4100A415C5 /* sizeUpDirectoryMetaDataQuery */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +274,7 @@
 			targets = (
 				3192AEC017F53A9200982576 /* sizeUpDirectoryCocoa */,
 				3192AED517F53AF100982576 /* sizeUpDirectoryCF */,
+				B532B9301C808D4100A415C5 /* sizeUpDirectoryMetaDataQuery */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +295,16 @@
 			files = (
 				3192AEE517F53BD100982576 /* main.m in Sources */,
 				3192AEEC17F53C7200982576 /* PRHDirectoryWeigher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B532B9311C808D4100A415C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B532B9321C808D4100A415C5 /* main.m in Sources */,
+				B532B9451C808F6200A415C5 /* NSMetadataQuery+Synchronous.m in Sources */,
+				B532B9401C808D8500A415C5 /* PRHDirectoryWeigher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +408,24 @@
 			};
 			name = Release;
 		};
+		B532B9381C808D4100A415C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sizeUpDirectoryMetaDataQuery/sizeUpDirectoryMetaDataQuery-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B532B9391C808D4100A415C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sizeUpDirectoryMetaDataQuery/sizeUpDirectoryMetaDataQuery-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +445,7 @@
 				3192AED117F53A9200982576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3192AEDF17F53AF200982576 /* Build configuration list for PBXNativeTarget "sizeUpDirectoryCF" */ = {
 			isa = XCConfigurationList;
@@ -351,6 +454,16 @@
 				3192AEE117F53AF200982576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B532B9371C808D4100A415C5 /* Build configuration list for PBXNativeTarget "sizeUpDirectoryMetaDataQuery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B532B9381C808D4100A415C5 /* Debug */,
+				B532B9391C808D4100A415C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
